@@ -66,22 +66,22 @@ echo "{
 
 # Create the project structure and files
 mkdir src
-echo "import fastify from 'fastify';
-import 'dotenv/config';
-const server = fastify();
+echo "import fastify from 'fastify'
+import 'dotenv/config'
+const server = fastify()
 
-const port = process.env.PORT || 3000
+const port = parseInt(process.env.PORT || '3000');
 
-server.get('/ping', async (request, reply) => {
-  return 'pong\n';
-});
+server.get('/', async (request, reply) => {
+  return 'Hello World!'
+})
 
 server.listen({ port }, (err, address) => {
   if (err) {
-    console.error(err);
+    console.error(err)
   }
   console.log(`Server listening at ${address}`);
-});" > src/index.ts
+})" > src/index.ts
 
 # Create the .env file
 echo "PORT=3000" > .env
