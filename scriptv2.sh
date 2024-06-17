@@ -85,7 +85,7 @@ app.listen({ port }, (err, address) => {
     console.error(err);
     process.exit(1);
   }
-  console.log(\`server listening on ${address}\`);
+  console.log(\`server listening on \${address}\`);
 });" > src/server.ts
 
 echo "import { app } from '../server';
