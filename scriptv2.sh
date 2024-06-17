@@ -119,6 +119,6 @@ dist" > .gitignore
 git add .
 git commit -m "Initial commit"
 
-echo "Node.js project with Express, dotenv, EditorConfig, Prettier, ESLint, and TypeScript successfully configured!"
+echo "Node.js project with Fastify, dotenv, EditorConfig, Prettier, ESLint, and TypeScript successfully configured!"
 
 npm run dev
