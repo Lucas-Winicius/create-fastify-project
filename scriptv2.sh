@@ -121,8 +121,4 @@ git commit -m "Initial commit"
 
 echo "Node.js project with Fastify, dotenv, EditorConfig, Prettier, ESLint, and TypeScript successfully configured!"
 
-alias fastify='bash -c "$(curl -fsSL https://raw.githubusercontent.com/Lucas-Winicius/create-fastify-project/main/scriptv2.sh)"'
-
-echo "Now you can use: fastify <project-name>"
-
 npm run dev
